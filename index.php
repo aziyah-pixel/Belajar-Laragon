@@ -1,5 +1,11 @@
 <?php
 
-echo "Halo, saya sedang belajar Laragon!";
+$nama = "Nanda";
+$jurusan = "Informatika";
+$kampus = "ITB AAS Indonesia";
+
+echo "Nama saya: " . $nama . "<br>";
+echo "Jurusan: " . $jurusan . "<br>";
+echo "Kampus: " . $kampus;
 
 ?>
