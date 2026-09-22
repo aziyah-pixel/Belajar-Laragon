@@ -7,28 +7,46 @@
 </head>
 <body>
     <?php
+    $mahasiswa = [
+        [
+            "nama" => "Nanda",
+            "jurusan" => "Informatika",
+            "nilai" => 90
+        ],
+        [
+            "nama" => "Budi",
+            "jurusan" => "Sistem Informatika",
+            "nilai" => 60
+        ],
+        [
+            "nama" => "siti",
+            "jurusan" => "Informatika",
+            "nilai" => 90
+        ],
 
-        $nama = "Nanda";
-        $jurusan = "Informatika";
-        $kampus = "ITB AAS Indonesia";
+    ];
 
-        echo "Nama saya: " . $nama . "<br>";
-        echo "Jurusan: " . $jurusan . "<br>";
-        echo "Kampus: " . $kampus . "<br>";
     ?>
-    <form action="" method="post">
-        <label for="">Nilai</label>
-        <input type="number" name="nilai" id="">
-        <button type="submit"></button>
+    <!--<form action="" method="post">
+        <label for="">Nama</label>
+        <input type="text" name="nama" id="">
+        <button type="submit"> INPUT</button>
     </form>
-    <br><br>
+    <br><br>-->
 
     <?php
-        //pengunaan if else
+    foreach ($mahasiswa as $data) {
+        //tampilkan data 
+        echo "Nama saya: " . $data["nama"] . "<br>";
+        echo "Nama saya: " . $data["jurusan"] . "<br>";
+        echo "Nama saya: " . $data["nilai"] . "<br>";
+    }
+        
+        /*pengunaan if else
        if($_SERVER["REQUEST_METHOD"] == "POST"){
 
         $nilai = $_POST['nilai'];
-        
+
         if ($nilai >= 75) {
             echo "Nilai: " . $nilai . "<br>";
             echo "Status: LULUS";
@@ -37,7 +55,7 @@
             echo "Status: BELUM LULUS";
         }
 
-       }
+       }*/
     ?>
     
 </body>
